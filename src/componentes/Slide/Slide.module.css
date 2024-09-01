@@ -1,0 +1,62 @@
+.sliderContainer {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.slider {
+    position: relative;
+    text-align: center;
+}
+
+.sliderImage {
+    width: 300px;
+    height: 200px; 
+    object-fit: contain; 
+    margin: auto; 
+    border-radius: 10px;
+}
+
+.caption {
+    position: absolute;
+    bottom: 0.2px;
+
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.prevArrow, .nextArrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prevArrow {
+    left: 10px;
+}
+
+.nextArrow {
+    right: 10px;
+}
+
+.prevArrow:hover, .nextArrow:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
