@@ -1,17 +1,17 @@
 import styles from './Banner.module.css';
 import circuloColorido from 'assets/circulo_colorido.png';
-import minhaFoto from 'assets/FotoPerfil.jpeg'
+import minhaFoto from 'assets/alvo.png'
 
 export default function Banner() {
     return (
         <div className={styles.banner}>
             <div className={styles.apresentacao}>
                 <h1 className={styles.titulo}>
-                    Olá, Mundo!
+                    Olá, a Todos!
                 </h1>
 
                 <p className={styles.paragrafo}>
-                    Boas vindas ao meu espaço pessoal! Eu sou o Caio, estudante de Sistemas de informação na FIAP, espero que aprenda algo novo :)
+                    Nesse espaço dedicamos a mostrar as informações sobre o nosso projeto.
                 </p>
             </div>
 
@@ -25,7 +25,7 @@ export default function Banner() {
                 <img
                     className={styles.minhaFoto}
                     src={minhaFoto}
-                    alt="Foto do Antônio Evaldo sorrindo"
+                    alt="Alvo"
                 />
             </div>
         </div>

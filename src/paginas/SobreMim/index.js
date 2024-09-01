@@ -1,24 +1,15 @@
 import styles from "./SobreMim.module.css";
-
 import PostModelo from "componentes/PostModelo";
-import fotoCapa from "assets/sobre_mim_capa.png";
-import fotoSobreMim from "assets/FotoPerfil.jpeg";
+import Slide from "componentes/Slide"
+
+
 
 export default function SobreMim() {
     return (
-        <PostModelo
-            fotoCapa={fotoCapa}
-            titulo="Sobre mim"
-        >
+        <PostModelo>
             <h3 className={styles.subtitulo}>
-                Olá, eu sou o Caio!
+                Problemas
             </h3>
-
-            <img
-                src={fotoSobreMim}
-                alt="Foto do Antônio Evaldo sorrindo"
-                className={styles.fotoSobreMim}
-            />
 
             <p className={styles.paragrafo}>
                 Oi, tudo bem? Eu sou estudante de Sistemas de informação e estou feliz de te ver por aqui.
@@ -40,6 +31,16 @@ export default function SobreMim() {
             <p className={styles.paragrafo}>
                 Desde então, tem sido aprenas aprendizados atrás de aprendizados. Tinho tido grandes oportunidades de aprender tanto na faculade quanto nos cursos da alura que a faculdade disponibiliza!
             </p>
+            
+            <h3 className={styles.subtitulo}>
+                Tecnologias Usadas
+            </h3>
+
+            <Slide>
+
+            </Slide>
+
         </PostModelo>
+
     )
 }
