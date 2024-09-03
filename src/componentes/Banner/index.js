@@ -22,11 +22,7 @@ export default function Banner() {
                     aria-hidden={true}
                 />
 
-                <img
-                    className={styles.minhaFoto}
-                    src={minhaFoto}
-                    alt="Alvo"
-                />
+               
             </div>
         </div>
     )
