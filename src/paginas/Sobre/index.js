@@ -1,6 +1,8 @@
+import Diagramas from "componentes/Diagramas";
 import styles from "./SobreMim.module.css";
 import PostModelo from "componentes/PostModelo";
-import Slide from "componentes/Slide"
+import Tecnologias from "componentes/Slide";
+
 
 
 
@@ -17,14 +19,15 @@ export default function Sobre() {
             <p className={styles.paragrafo}>
             Além disso, o sistema enfrenta problemas de escalabilidade e falta de desacoplamento, dificultando a evolução contínua e a integração de novos recursos. O monitoramento atual é insuficiente para garantir a segurança e a integridade dos dados, tornando a manutenção e a adaptação do sistema mais complexas. Esses desafios precisam ser abordados para garantir um desempenho eficiente e uma operação estável e segura.
             </p>
-        
-            <h3 className={styles.subtitulo}>
-                Tecnologias Usadas
-            </h3>
 
-            <Slide>
+            <h3 className={styles.subtitulo}>Diagramas</h3>
+            <Diagramas />
 
-            </Slide>
+            <br>
+            </br>
+
+            <h3 className={styles.subtitulo}>Tecnologias Usadas</h3>
+            <Tecnologias />
 
         </PostModelo>
 

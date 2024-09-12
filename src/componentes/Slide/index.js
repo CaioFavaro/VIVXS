@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import styles from './Slide.module.css'; // Importando o CSS Module
+import React from 'react';
+import Carousel from 'componentes/Carousel';
 
-const data = [
+const tecnologiasData = [
     {
         image: '/assets/Tecnologias/awslb.png',
         title: 'Aws load Balancer',
@@ -68,33 +68,11 @@ const data = [
     },
 ];
 
-export default function SliderComponent() {
-    const [currentIndex, setCurrentIndex] = useState(0);
-
-    const nextSlide = () => {
-        setCurrentIndex((prevIndex) => 
-            prevIndex === data.length - 1 ? 0 : prevIndex + 1
-        );
-    };
-
-    const prevSlide = () => {
-        setCurrentIndex((prevIndex) => 
-            prevIndex === 0 ? data.length - 1 : prevIndex - 1
-        );
-    };
-
+export default function Tecnologias() {
     return (
-        <div className={styles.sliderContainer}>
-            <div className={styles.slider}>
-                <img 
-                    src={data[currentIndex].image} 
-                    alt={data[currentIndex].title} 
-                    className={styles.sliderImage} 
-                />
-                <div className={styles.caption}>{data[currentIndex].title}</div>
-            </div>
-            <button className={styles.prevArrow} onClick={prevSlide}>&#10094;</button>
-            <button className={styles.nextArrow} onClick={nextSlide}>&#10095;</button>
+        <div>
+            
+            <Carousel data={tecnologiasData} />
         </div>
     );
 }

@@ -1,0 +1,15 @@
+.diagramasContainer {
+    padding: 2rem;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.customSlide .sliderImage {
+    width: 500px; /* Largura maior para os diagramas */
+    height: 400px; /* Altura maior */
+    object-fit: contain;
+}

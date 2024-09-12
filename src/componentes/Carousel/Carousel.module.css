@@ -1,0 +1,102 @@
+.carouselContainer {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.slider {
+    position: relative;
+    text-align: center;
+}
+
+.sliderImage {
+    width: 300px;
+    height: 200px; 
+    object-fit: contain; 
+    margin: auto; 
+    border-radius: 10px;
+}
+
+.caption {
+    position: absolute;
+    bottom: 0.2px;
+
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.prevArrow, .nextArrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prevArrow {
+    left: 10px;
+}
+
+.nextArrow {
+    right: 10px;
+}
+
+.prevArrow:hover, .nextArrow:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Modal Styles */
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8); /* Sombra */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modalContent {
+    position: relative;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.modalImage {
+    max-width: 90vw; /* Limite máximo de largura da imagem */
+    max-height: 90vh; /* Limite máximo de altura da imagem */
+    object-fit: contain; /* Mantém a proporção da imagem */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra na imagem */
+}
+
+.closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
