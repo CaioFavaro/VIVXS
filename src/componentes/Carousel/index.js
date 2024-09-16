@@ -5,6 +5,8 @@ export default function Carousel({ data }) {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [currentImage, setCurrentImage] = useState(null);
+    const [isZoomed, setIsZoomed] = useState(false); // Controle de zoom
+    const [zoomPosition, setZoomPosition] = useState({ x: 0, y: 0 });
 
     const nextSlide = () => {
         setCurrentIndex((prevIndex) =>
@@ -21,10 +23,23 @@ export default function Carousel({ data }) {
     const openModal = (image) => {
         setCurrentImage(image);
         setIsModalOpen(true);
+        setIsZoomed(false); // Resetar o zoom quando o modal for aberto
     };
 
     const closeModal = () => {
         setIsModalOpen(false);
+        setIsZoomed(false); // Resetar o zoom quando o modal for fechado
+    };
+
+    const toggleZoom = (e) => {
+        if (!isZoomed) {
+            // Captura a posição do clique para definir a origem do zoom
+            const rect = e.target.getBoundingClientRect();
+            const x = ((e.clientX - rect.left) / rect.width) * 100;
+            const y = ((e.clientY - rect.top) / rect.height) * 100;
+            setZoomPosition({ x, y });
+        }
+        setIsZoomed(!isZoomed);
     };
 
     return (
@@ -48,7 +63,15 @@ export default function Carousel({ data }) {
                         <span className={styles.closeButton} onClick={closeModal}>
                             &times;
                         </span>
-                        <img src={currentImage} alt="Modal" className={styles.modalImage} />
+                        <img
+                            src={currentImage}
+                            alt="Modal"
+                            className={`${styles.modalImage} ${isZoomed ? styles.zoomedImage : ''}`}
+                            onClick={toggleZoom}
+                            style={{
+                                transformOrigin: `${zoomPosition.x}% ${zoomPosition.y}%`,
+                            }}
+                        />
                     </div>
                 </div>
             )}
