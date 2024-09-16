@@ -80,6 +80,7 @@
     background-color: white;
     padding: 1rem;
     border-radius: 10px;
+    overflow: hidden; /* Garantir que o conteúdo seja cortado */
 }
 
 .modalImage {
@@ -88,14 +89,22 @@
     object-fit: contain; /* Mantém a proporção da imagem */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra na imagem */
+    cursor: zoom-in; /* Cursor de zoom */
+    transition: transform 0.3s ease; /* Suavidade ao aplicar o zoom */
+}
+
+.zoomedImage {
+    transform: scale(2); /* Nível de zoom */
+    cursor: zoom-out; /* Cursor de saída */
+    transition: transform 0.3s ease, transform-origin 0.3s ease; /* Suavidade no zoom e origem */
 }
 
 .closeButton {
     position: absolute;
-    top: 10px;
+    top: 15px;
     right: 10px;
-    font-size: 2rem;
-    color: white;
+    font-size: 4rem;
+    color: black;
     cursor: pointer;
     background-color: transparent;
     border: none;
