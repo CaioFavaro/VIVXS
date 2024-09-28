@@ -1,6 +1,6 @@
 import styles from './Banner.module.css';
 import circuloColorido from 'assets/circulo_colorido.png';
-import minhaFoto from 'assets/alvo.png'
+
 
 export default function Banner() {
     return (
@@ -13,6 +13,10 @@ export default function Banner() {
                 <p className={styles.paragrafo}>
                     Nesse espaço dedicamos a mostrar as informações sobre o nosso projeto.
                 </p>
+
+                <h1 className={styles.subtitulo}>
+                    Inovação para conectar.
+                </h1>
             </div>
 
             <div className={styles.imagens}>
