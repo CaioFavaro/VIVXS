@@ -1,5 +1,7 @@
 .rodape {
-    background-color: var(--azul-escuro);
+    border-top-right-radius: 35%;
+    border-top-left-radius: 35%;
+    background-color: #8233AA;
     color: var(--branco);
     padding: 2rem 0;
     display: flex;

@@ -1,35 +1,34 @@
-import Diagramas from "componentes/Diagramas";
 import styles from "./SobreMim.module.css";
 import PostModelo from "componentes/PostModelo";
-import Tecnologias from "componentes/Slide";
-
-
-
+import problema from 'assets/Problema.png';
 
 export default function Sobre() {
     return (
         <PostModelo>
-            <h3 className={styles.subtitulo}>
-                Problemas
-            </h3>
+            <div>
+                <h3 className={styles.subtitulo}>
+                    Problemas
+                </h3>
 
-            <p className={styles.paragrafo}>
-            Atualmente, enfrentamos uma série de desafios críticos com o sistema. A segregação de clientes e a presença de bases de dados heterogêneas estão gerando dificuldades na gestão e integridade dos dados. O desempenho do sistema está sendo afetado pela latência elevada e pela degradação de serviço, o que compromete a alta disponibilidade e a resiliência necessárias. 
-            </p>
-            <p className={styles.paragrafo}>
-            Além disso, o sistema enfrenta problemas de escalabilidade e falta de desacoplamento, dificultando a evolução contínua e a integração de novos recursos. O monitoramento atual é insuficiente para garantir a segurança e a integridade dos dados, tornando a manutenção e a adaptação do sistema mais complexas. Esses desafios precisam ser abordados para garantir um desempenho eficiente e uma operação estável e segura.
-            </p>
+                <p className={styles.paragrafo}>
+                    A Vivo enfrenta desafios com sistemas legados fragmentados, que tornam o aplicativo "Vivinho" lento e propenso a erros. Essa falta de integração resulta em má experiência do usuário e altos custos operacionais. O objetivo é melhorar a comunicação entre os sistemas, tornando-a mais ágil e eficiente, sem substituí-los.
+                </p>
 
-            <h3 className={styles.subtitulo}>Diagramas</h3>
-            <Diagramas />
+                <ul>
+                    <li>Segregação de Clientes</li>
+                    <li>Tempo de Resposta crítico</li>
+                    <li>Degradação de serviço</li>
+                    <li>Bases de Dados segregadas e heterogêneas</li>
+                </ul>
+            </div>
 
-            <br>
-            </br>
-
-            <h3 className={styles.subtitulo}>Tecnologias Usadas</h3>
-            <Tecnologias />
-
+            <div className={styles.imagens}>
+                <img
+                    className={styles.problema}
+                    src={problema}
+                    alt="Problemas identificados"
+                />
+            </div>
         </PostModelo>
-
-    )
+    );
 }

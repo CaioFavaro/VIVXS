@@ -1,0 +1,108 @@
+.subtitulo {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+.paragrafo {
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    margin-bottom: 1.5rem;
+}
+
+.lista {
+    list-style-type: none;
+    padding-left: 1.5rem;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 2rem;
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    margin-bottom: 1.5rem;
+}
+
+ul li {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+ul li::before {
+    content: "•"; /* Ponto antes de cada item */
+    color: black; /* Cor do ponto */
+    font-size: 1.5rem;
+    position: absolute;
+    left: -1.5rem; /* Ajusta a posição do ponto */
+}
+
+@media (max-width: 744px) {
+    .subtitulo {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .paragrafo, ul {
+        font-size: 1rem;
+        line-height: 1.75rem;
+    }
+}
+
+.imagens {
+    position: relative;
+    height: auto;
+    margin-top: 2rem;
+}
+
+.imagens > .fluxo {
+    display: block;
+    margin: 0 auto;
+    width: 80vw;
+    max-width: 1000px;
+}
+
+.bloco {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Alinha o conteúdo verticalmente no centro */
+}
+
+.container {
+    background-color: #f9f9f9;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.titulo {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.conteudo {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch; 
+    gap: 2rem;
+}
+
+.divisor {
+    width: 3px;
+    height: 100%;
+    background-color: black;
+    align-self: stretch;
+}

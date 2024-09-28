@@ -1,6 +1,7 @@
 .banner {
+    border-radius: 5%;
     padding: 3rem 7.5rem 6.25rem;
-    background-color: var(--azul-escuro);
+    background-color: #8233AA;
     color: var(--branco);
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -9,6 +10,13 @@
 .titulo {
     font-family: var(--fonte-secundaria);
     font-size: 4rem;
+    margin-top: 4.875rem;
+    margin-bottom: 2rem;
+}
+
+.subtitulo {
+    font-family: var(--fonte-secundaria);
+    font-size: 3.5rem;
     margin-top: 4.875rem;
     margin-bottom: 2rem;
 }
@@ -36,7 +44,7 @@
 .imagens > .circuloColorido {
     position: absolute;
     right: 7vw;
-    bottom: 2.2vw;
+    bottom: 1.7vw;
     width: 25vw;
 }
  
