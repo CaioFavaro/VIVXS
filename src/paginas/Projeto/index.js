@@ -48,10 +48,10 @@ export default function Projeto() {
 
             <div className={styles.botaoContainer}>
                 <Link to="/caso1">
-                    <BotaoPrincipal tamanho="lg">Ir para Caso 1</BotaoPrincipal>
+                    <BotaoPrincipal tamanho="lg">Cliente Existente no Sistema Legado e no Data Mesh</BotaoPrincipal>
                 </Link>
                 <Link to="/caso2">
-                    <BotaoPrincipal tamanho="lg">Ir para Caso 2</BotaoPrincipal>
+                    <BotaoPrincipal tamanho="lg"> Cenário Futurista: com Transição para o Data Mesh</BotaoPrincipal>
                 </Link>
             </div>
 
