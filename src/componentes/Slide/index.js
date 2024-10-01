@@ -3,16 +3,44 @@ import Carousel from 'componentes/Carousel';
 
 const tecnologiasData = [
     {
-        image: '/assets/Tecnologias/awslb.png',
-        title: 'Aws load Balancer',
+        image: '/assets/Tecnologias/aws.png',
+        title: 'Amazon AWS',
     },
     {
-        image: '/assets/Tecnologias/camel.png',
-        title: 'Camel',
+        image: '/assets/Tecnologias/poauto.png',
+        title: 'Power automate',
     },
     {
-        image: '/assets/Tecnologias/cloudaipla.png',
-        title: 'Google Cloud AI Plataform',
+        image: '/assets/Tecnologias/azure.png',
+        title: 'Azure',
+    },
+    {
+        image: '/assets/Tecnologias/bi.png',
+        title: 'Power BI',
+    },
+    {
+        image: '/assets/Tecnologias/docker.png',
+        title: 'Docker',
+    },
+    {
+        image: '/assets/Tecnologias/dynamo.png',
+        title: 'DynamoDB',
+    },
+    {
+        image: '/assets/Tecnologias/git.png',
+        title: 'GitHub',
+    },
+    {
+        image: '/assets/Tecnologias/jaci.png',
+        title: 'Jasypt',
+    },
+    {
+        image: '/assets/Tecnologias/shield.png',
+        title: 'Amazon Shield',
+    },
+    {
+        image: '/assets/Tecnologias/watch.png',
+        title: 'Amazon CloudWatch',
     },
     {
         image: '/assets/Tecnologias/denodo.png',
@@ -23,40 +51,16 @@ const tecnologiasData = [
         title: 'Gzip',
     },
     {
-        image: '/assets/Tecnologias/resi4.png',
-        title: 'Resilience4j',
-    },
-    {
-        image: '/assets/Tecnologias/podauto.png',
-        title: 'Horizontal Pod Autoscaler',
-    },
-    {
-        image: '/assets/Tecnologias/kong.png',
-        title: 'Kong',
-    },
-    {
         image: '/assets/Tecnologias/Prome.png',
         title: 'Prometheus',
-    },
-    {
-        image: '/assets/Tecnologias/nginx.png',
-        title: 'NGINX',
     },
     {
         image: '/assets/Tecnologias/kafka.png',
         title: 'Kafka',
     },
     {
-        image: '/assets/Tecnologias/spark.png',
-        title: 'Apache Spark MLib',
-    },
-    {
         image: '/assets/Tecnologias/zookeeper.png',
         title: 'Apache Zookeeper',
-    },
-    {
-        image: '/assets/Tecnologias/redshift.png',
-        title: 'Amazon Reshift ML',
     },
     {
         image: '/assets/Tecnologias/spring.png',

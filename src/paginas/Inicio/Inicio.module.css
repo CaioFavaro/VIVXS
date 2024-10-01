@@ -7,8 +7,22 @@
     margin-top: 4rem;
 }
 
+.lista li {
+    margin-bottom: 0.75rem;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.lista li::before {
+    content: "•";
+    color: #4A90E2;
+    font-size: 1.5rem;
+    position: absolute;
+    left: 0;
+}
+
 .linksContainer {
-    margin-bottom: 3rem; 
+    margin-bottom: 3rem;
 }
 
 @media (max-width: 1100px) {
@@ -83,6 +97,39 @@ ul li::before {
     padding-left: 1.5rem;
     font-size: 1.2rem;
     line-height: 1.8rem;
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-right: 2rem; /* Espaço entre a lista e a imagem */
+}
+
+/* Adicionado para posicionar a lista e a imagem lado a lado */
+.containerProblema {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    flex-wrap: wrap; /* Para garantir que fique responsivo em telas menores */
+}
+
+.problema {
+    max-width: 40%; /* Limite o tamanho da imagem */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 744px) {
+    .containerProblema {
+        flex-direction: column; /* Empilha a lista e a imagem em telas pequenas */
+    }
+
+    .problema {
+        max-width: 100%;
+        margin-top: 1rem;
+    }
 }
 
 .bloco {
@@ -124,6 +171,7 @@ ul li::before {
     gap: 1rem;
     margin-top: 1rem; /* Espaço entre o título "Links" e os botões */
 }
+
 .botao {
     background-color: #802BAA; /* Use a cor primária do seu site */
     color: black;
@@ -211,7 +259,12 @@ ul li::before {
         width: 80px;
         height: 80px;
     }
+    .problemas .lista {
+        font-size: 1.4rem; /* Aumentado o tamanho da fonte especificamente para esta lista */
+        line-height: 2rem; /* Ajustado o espaçamento entre linhas */
+    }
+    
+    .problemas .lista li::before {
+        font-size: 1.5rem; /* Ajustado o tamanho do marcador para combinar com o novo tamanho da fonte */
+    }
 }
-
-
-
