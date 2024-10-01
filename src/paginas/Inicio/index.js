@@ -59,16 +59,15 @@ export default function Inicio() {
                 <p className={styles.paragrafo}>
                     A Vivo enfrenta desafios com sistemas legados fragmentados, que tornam o aplicativo "Vivinho" lento e propenso a erros. Essa falta de integração resulta em má experiência do usuário e altos custos operacionais. O objetivo é melhorar a comunicação entre os sistemas, tornando-a mais ágil e eficiente, sem substituí-los.
                 </p>
-                <ul>
+                <div className={styles.containerProblema}>
+                <ul className={styles.lista}>
                     <li>Segregação de Clientes</li>
                     <li>Tempo de Resposta crítico</li>
                     <li>Degradação de serviço</li>
                     <li>Bases de Dados segregadas e heterogêneas</li>
                 </ul>
-            </div>
-
-            <div className={styles.imagens}>
                 <img className={styles.problema} src={problema} alt="Problemas identificados" />
+            </div>
             </div>
 
             <h3 className={styles.subtitulo} id="solucao">Fluxo da Solução</h3>

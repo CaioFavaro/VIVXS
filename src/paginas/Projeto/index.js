@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Tecnologias from 'componentes/Slide';
 import BotaoPrincipal from 'componentes/BotaoPrincipal';
 import styles from './Projeto.module.css';
-import diagrama from 'assets/Diagrama.png';
+import diagrama from 'assets/Diagrama.jpg';
 
 export default function Projeto() {
     const [isModalOpen, setIsModalOpen] = useState(false);

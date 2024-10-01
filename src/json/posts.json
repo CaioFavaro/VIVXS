@@ -11,8 +11,8 @@
     },
     {
         "id": 4,
-        "titulo": "Virtualização de dados & MiddleWare de Integração ",
-        "texto": "### O que faz: Decide se os dados devem ser recuperados do Sistema Legado ou do Data Mesh. E realiza a transformação e integração dos dados entre diferentes sistemas. \n\n ## Como: Glue Data Catalog para registrar todas as fontes de dados. ETL Jobs para transformar e integrar dados entre diferentes fontes. Athena para consultar esses dados de forma virtual, sem a necessidade de movê-los. \n\n Tecnologia: Serviços da AWS"
+        "titulo": "Virtualização de dados/MiddleWare de Integração ",
+        "texto": "## O que faz: Decide se os dados devem ser recuperados do Sistema Legado ou do Data Mesh. E realiza a transformação e integração dos dados entre diferentes sistemas. \n\n # Como: Glue Data Catalog para registrar todas as fontes de dados. ETL Jobs para transformar e integrar dados entre diferentes fontes. Athena para consultar esses dados de forma virtual, sem a necessidade de movê-los. \n\n Tecnologia: Serviços da AWS"
     },  
     {
         "id": 5,
@@ -22,7 +22,7 @@
     {
         "id": 6,
         "titulo": "Data Mesh",
-        "texto": "### O que faz: Arquitetura de dados descentralizada, com equipes responsáveis por seus próprios dados, garantindo escalabilidade e flexibilidade. Armazena registros de alterações e transações, especialmente em caso de falhas \n\n ![Gif explicativo sobre Data Mesh](/assets/posts/7/gif1.gif) \n\n ## Como: Implementação do Data Mesh com políticas de acesso, replicação em tempo real, caching inteligente e autoescalabilidade. Integração com sistemas legados e registro de operações em um painel de logs \n\n Tecnologia: AWS, DynamoDB, CloudWatch, Amazon Shield. "
+        "texto": "## O que faz: Arquitetura de dados descentralizada, com equipes responsáveis por seus próprios dados, garantindo escalabilidade e flexibilidade. Armazena registros de alterações e transações, especialmente em caso de falhas \n\n ![Gif explicativo sobre Data Mesh](/assets/posts/7/gif1.gif) \n\n # Como: Implementação do Data Mesh com políticas de acesso, replicação em tempo real, caching inteligente e autoescalabilidade. Integração com sistemas legados e registro de operações em um painel de logs \n\n Tecnologia: AWS, DynamoDB, CloudWatch, Amazon Shield. "
     },
     {
         "id": 7,
