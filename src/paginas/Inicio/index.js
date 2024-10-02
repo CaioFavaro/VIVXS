@@ -116,15 +116,14 @@ export default function Inicio() {
                 <h3 className={styles.subtitulo}>Links</h3>
                 <div className={styles.botaoContainer}>
                     <a href="https://github.com/thiemisoubhia/vivx" target="_blank" rel="noopener noreferrer">
-                        <BotaoPrincipal tamanho="lg">Ir para o GitHub</BotaoPrincipal>
+                        <BotaoPrincipal tamanho="lg">GitHub</BotaoPrincipal>
                     </a>
-
-                    {/* Use onClick para rolar ao topo e depois mudar de página */}
                     <Link to="/projeto" onClick={scrollToTop}>
-                        <BotaoPrincipal tamanho="lg">Ir para Projetos</BotaoPrincipal>
+                        <BotaoPrincipal tamanho="lg">Projeto</BotaoPrincipal>
                     </Link>
-
+                <a href="https://app.powerbi.com/view?r=eyJrIjoiYmU2MjA3OWMtMjY4OC00MWM2LThkNjktOTI3Y2IwMGFlZDU4IiwidCI6IjExZGJiZmUyLTg5YjgtNDU0OS1iZTEwLWNlYzM2NGU1OTU1MSIsImMiOjR9" target="_blank" rel="noopener noreferrer">
                     <BotaoPrincipal tamanho="lg" disabled>Dashboard </BotaoPrincipal>
+                </a>
                 </div>
             </div>
 
